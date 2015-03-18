@@ -1,0 +1,79 @@
+@import "compass/css3/box-sizing";
+@import "compass/css3/transform";
+@import "compass/css3/flexbox";
+
+* {
+    @include box-sizing(border-box);
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.modal {
+    max-height: 90%;
+    height: auto;
+    overflow: hidden;
+
+    width: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+
+    @include transform(translate(-50%, -50%));
+
+    @include flexbox((
+        display: flexbox,
+        flex-direction: column
+    ), $version: 2);
+
+    @include flexbox((
+        display: flex,
+        flex-direction: column
+    ));
+}
+
+header {
+    background: yellow;
+
+    @include flexbox((
+        order: 1,
+        flex-shrink: 0,
+        flex-basis: 2rem
+    ), $version: 2);
+
+    @include flexbox((
+        order: 1,
+        flex-shrink: 0,
+        flex-basis: 2rem
+    ));
+}
+
+section {
+    background: pink;
+    overflow: hidden;
+    position: relative;
+
+    @include flexbox((
+        order: 2
+
+    ), $version: 2);
+
+    @include flexbox((
+        order: 2
+    ));
+}
+
+.directive {
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    overflow: auto;
+    background: red;
+}
