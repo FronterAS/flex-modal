@@ -19,8 +19,6 @@ body {
     max-height: 90%;
     height: auto;
 
-    overflow: hidden;
-
     width: 50rem;
     position: absolute;
     top: 50%;
@@ -42,10 +40,9 @@ body {
 
 #section {
     position: relative;
-    padding-top: 2rem;
+    border-top: 2rem solid transparent;
     height: 100%;
     background: pink;
-    overflow: hidden;
 }
 
 #directive {

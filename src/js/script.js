@@ -2,10 +2,9 @@
     'use strict';
 
     var calcHeight = function () {
-        var h = $('#modal').height(),
-            tPadding = $('#section').css('padding-top');
+        var h = $('#modal').height() - $('#header').height();
 
-        $('#section').height(h - parseInt(tPadding, 10));
+        $('#section').height(h);
     };
 
     $(function () {
