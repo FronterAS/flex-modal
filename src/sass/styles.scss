@@ -15,10 +15,10 @@ body {
     margin: 0;
 }
 
-.modal {
-    // max-height: 90%;
-    // height: auto;
-    height: 90%;
+#modal {
+    max-height: 90%;
+    height: auto;
+
     overflow: hidden;
 
     width: 50rem;
@@ -30,7 +30,7 @@ body {
     @include transform(translate(-50%, -50%));
 }
 
-header {
+#header {
     height: 2rem;
     width: 100%;
     background: yellow;
@@ -40,7 +40,7 @@ header {
     left: 0;
 }
 
-section {
+#section {
     position: relative;
     padding-top: 2rem;
     height: 100%;
@@ -48,7 +48,8 @@ section {
     overflow: hidden;
 }
 
-.directive {
+#directive {
+    -webkit-overflow-scrolling: touch;
     height: 100%;
     overflow: auto;
     background: red;
